@@ -2,7 +2,6 @@ window.TRANSLATIONS_EN = {
   "meta.title": "Juan David Tapiero Montoya | Backend & Mobile Developer",
   "meta.description": "Portfolio of Juan David Tapiero Montoya, Systems and Computer Engineering student and junior developer: backend with Java and Spring Boot, mobile with Flutter.",
 
-  "skip": "Skip to content",
   "aria.menu": "Open menu",
   "aria.nav": "Main navigation",
   "aria.lang": "Change language",
