@@ -8,7 +8,7 @@ Este archivo es tu única fuente de verdad. Léelo completo una vez y luego trab
 
 1. **Un paso a la vez.** Haz solo el paso indicado, ejecuta su "Verifica", informa "Paso N completado" y **detente**. No avances hasta que el usuario diga "continúa".
 2. **Copia textos y código tal cual** desde las secciones 6 y 7. No reescribas, no traduzcas, no "mejores" la redacción, no agregues secciones, proyectos, métricas ni enlaces que no estén aquí.
-3. **Cero dependencias:** sin frameworks, sin npm, sin CDN, sin fuentes externas, sin imágenes (solo `favicon.svg`), sin jQuery. Todo es HTML, CSS y JavaScript puros, abrible con doble clic en `index.html`.
+3. **Cero dependencias:** sin frameworks, sin npm, sin CDN, sin fuentes externas, sin imágenes en la página (solo `favicon.svg`; única excepción: `og-image.png`, usada solo en la vista previa al compartir), sin jQuery. Todo es HTML, CSS y JavaScript puros, abrible con doble clic en `index.html`.
 4. **Sin estilos en línea** (`style="..."`) y sin `!important` (excepto en el bloque `prefers-reduced-motion`).
 5. Código: indentación de 2 espacios, comillas dobles, punto y coma en JS, nombres de clases e IDs en inglés y `kebab-case`.
 6. **Idioma del contenido:** el texto en **español vive en `index.html`** (es el idioma por defecto). El texto en **inglés vive solo en `js/translations.js`**. Cada elemento traducible tiene un atributo `data-i18n="clave"` y la clave debe existir en `translations.js`.
@@ -26,7 +26,7 @@ Este archivo es tu única fuente de verdad. Léelo completo una vez y luego trab
 | Contacto | Correo, LinkedIn y GitHub. Nada más (sin formulario, sin WhatsApp, sin CV) |
 | Extras | Incluir certificaciones e idiomas. **Sin foto** |
 | Despliegue | GitHub Pages, sin dominio propio |
-| Vista previa al compartir | Etiquetas Open Graph y canonical en index.html, solo en español y sin imagen (regla de cero imágenes) |
+| Vista previa al compartir | Etiquetas Open Graph y canonical en index.html, solo en español, con una imagen `assets/og-image.png` (1200x630 px) usada solo para esto |
 
 ## 3. Estructura exacta de archivos
 
@@ -37,7 +37,8 @@ portafolio/
 ├── README.md
 ├── .nojekyll
 ├── assets/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   └── og-image.png
 ├── css/
 │   ├── variables.css
 │   ├── base.css
@@ -145,7 +146,11 @@ Todo el copywriting exacto está dentro de los bloques de código de las seccion
   <meta property="og:description" content="Portafolio de Juan David Tapiero Montoya, estudiante de Ingeniería de Sistemas y Computación y desarrollador junior backend con Java y Spring Boot y móvil con Flutter.">
   <meta property="og:url" content="https://juanda2312.github.io/portafolio/">
   <meta property="og:locale" content="es_CO">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://juanda2312.github.io/portafolio/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portafolio de Juan David Tapiero Montoya, desarrollador backend y móvil">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
