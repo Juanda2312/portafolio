@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juan David Tapiero Montoya | Desarrollador Backend y Móvil</title>
+  <meta name="description" content="Portafolio de Juan David Tapiero Montoya, estudiante de Ciencias de la Computación y desarrollador junior backend con Java y Spring Boot y móvil con Flutter.">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="js/translations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">~/juan-david</a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú" data-i18n-aria="aria.menu">&#9776;</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Navegación principal" data-i18n-aria="aria.nav">
+        <ul class="nav-list">
+          <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+          <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+          <li><a href="#certifications" data-i18n="nav.certs">Certificaciones</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Cambiar idioma" data-i18n-aria="aria.lang">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-prompt">$ whoami</p>
+          <h1 class="hero-name">Juan David Tapiero Montoya</h1>
+          <p class="hero-role" data-i18n="hero.role">Estudiante de Ciencias de la Computación · Desarrollador junior full stack y móvil</p>
+          <p class="hero-tagline" data-i18n="hero.tagline">Construyo backends seguros con Java y Spring Boot y apps móviles con Flutter. Me gusta convertir la teoría de estructuras de datos en productos reales que funcionan.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-i18n="hero.cta.projects">Ver proyectos</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="hero.cta.contact">Contactar</a>
+          </div>
+        </div>
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="terminal-title">focus.sh</span>
+          </div>
+          <pre class="terminal-body"><code><span class="t-prompt">$</span> cat focus.txt
+<span class="t-key">backend</span>  <span class="t-val">Java · Spring Boot · JWT</span>
+<span class="t-key">mobile</span>   <span class="t-val">Dart · Flutter</span>
+<span class="t-key">data</span>     <span class="t-val">SQL · Docker</span>
+<span class="t-prompt">$</span> <span class="cursor">_</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head"><span class="section-index">01</span><h2 data-i18n="about.title">Sobre mí</h2></div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-i18n="about.p1">Soy estudiante de Ciencias de la Computación en la Universidad del Quindío, en Armenia, Colombia. Mi enfoque principal es el backend: APIs REST con Spring Boot, seguridad con JWT y roles, y modelos de dominio con DDD y Arquitectura Hexagonal.</p>
+            <p data-i18n="about.p2">También desarrollo apps móviles con Flutter y Dart, pensadas para funcionar sin conexión y guardar sus datos de forma local. Disfruto trabajar en equipo, escribir pruebas y documentar mis APIs con Swagger.</p>
+          </div>
+          <dl class="about-facts">
+            <div><dt>location</dt><dd>Armenia, Colombia</dd></div>
+            <div><dt>university</dt><dd>Universidad del Quindío</dd></div>
+            <div><dt>degree</dt><dd data-i18n="about.degree">Ciencias de la Computación</dd></div>
+            <div><dt>focus</dt><dd data-i18n="about.focus">Backend y móvil</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head"><span class="section-index">02</span><h2 data-i18n="projects.title">Proyectos destacados</h2></div>
+        <p class="section-lead" data-i18n="projects.lead">Una selección de proyectos que muestran mi enfoque en backend, seguridad y apps móviles.</p>
+        <div class="projects-grid">
+
+          <article class="card">
+            <header class="card-header">
+              <p class="card-kind" data-i18n="p1.kind">Full stack · Marketplace multi-vendedor</p>
+              <h3 class="card-title">E-Commerce Marketplace Gamer</h3>
+            </header>
+            <p class="card-desc" data-i18n="p1.desc">Marketplace multi-vendedor de productos gaming (periféricos, mobiliario de setup, juegos físicos, licencias digitales y combos), construido en equipo para Programación Avanzada / Ingeniería de Software en la Universidad del Quindío. Full stack con Angular, Spring Boot y MariaDB, bajo Arquitectura Hexagonal y Domain-Driven Design.</p>
+            <ul class="card-bullets">
+              <li data-i18n="p1.b1">Modelo de dominio rico: raíces de agregado, objetos de valor como records de Java y reglas de negocio protegidas (stock nunca negativo, reembolso dentro de 48 h, una reseña por compra).</li>
+              <li data-i18n="p1.b2">37 casos de uso: compras, catálogo, combos, reseñas y puntos, wishlist, notificaciones, cuentas y reportes.</li>
+              <li data-i18n="p1.b3">Seguridad con Spring Security y JWT, roles COMPRADOR y VENDEDOR, contraseñas con BCrypt y la identidad del usuario siempre tomada del token.</li>
+              <li data-i18n="p1.b4">API REST documentada con Swagger, con búsqueda paginada de catálogo y reportes de ventas resueltos en la base de datos.</li>
+              <li data-i18n="p1.b5">Pruebas con @DataJpaTest, endpoints protegidos (401 / 403 / 201) y una prueba de integración de punta a punta con MockMvc.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>Java 21</li><li>Spring Boot</li><li>Spring Security</li><li>JWT</li><li>Angular</li><li>MariaDB</li><li>DDD</li><li>Swagger</li>
+            </ul>
+            <a class="card-link" href="https://github.com/ShanT237/EcommerceProductosGamer" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.view">Ver en GitHub</span> →</a>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <p class="card-kind" data-i18n="p2.kind">Full stack · Gestión inmobiliaria</p>
+              <h3 class="card-title">PropTech</h3>
+            </header>
+            <p class="card-desc" data-i18n="p2.desc">Sistema full stack que va más allá del CRUD: gestiona inmuebles, clientes, asesores, visitas y operaciones, y analiza el comportamiento comercial. Sus colecciones principales son implementaciones propias, sin java.util.</p>
+            <ul class="card-bullets">
+              <li data-i18n="p2.b1">Arquitectura en capas: frontend en Angular 17 y API REST con Spring Boot 3 (Java 21), documentada con Swagger UI.</li>
+              <li data-i18n="p2.b2">Estructuras de datos con propósito: árbol AVL para precios y rankings, grafo con BFS para relaciones cliente–inmueble, pila para deshacer y colas FIFO y de prioridad para visitas y alertas.</li>
+              <li data-i18n="p2.b3">Motor de recomendaciones con puntaje de 0 a 100, alertas automáticas y detección de comportamientos inusuales.</li>
+              <li data-i18n="p2.b4">PropBot: asistente con IA (LLM vía OpenRouter) que responde con datos en vivo de la plataforma, con panel de administración y portal del cliente.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>Java 21</li><li>Spring Boot 3</li><li>Angular 17</li><li>TypeScript</li><li>Maven</li><li>Swagger</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Juanda2312/PropTech" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.view">Ver en GitHub</span> →</a>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <p class="card-kind" data-i18n="p3.kind">Móvil · App Android sin conexión</p>
+              <h3 class="card-title">ListaMercado</h3>
+            </header>
+            <p class="card-desc" data-i18n="p3.desc">App Android 100% offline para organizar el mercado: gestiona productos y supermercados, arma la lista con totales por supermercado y controla un presupuesto con el saldo restante. Hecha con Flutter, sin internet.</p>
+            <ul class="card-bullets">
+              <li data-i18n="p3.b1">Búsqueda inteligente, sin distinguir mayúsculas ni tildes, y filtro por supermercado.</li>
+              <li data-i18n="p3.b2">Dos vistas, plana y por supermercado, con tachado sincronizado entre ambas.</li>
+              <li data-i18n="p3.b3">Deslizar para quitar ítems con opción de deshacer, y presupuesto opcional con saldo en verde o rojo.</li>
+              <li data-i18n="p3.b4">APK de release firmado, sin permiso de internet y con todos los datos guardados localmente.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>Flutter</li><li>Dart</li><li>Provider</li><li>Android</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Juanda2312/ListaMercado" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.view">Ver en GitHub</span> →</a>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <p class="card-kind" data-i18n="p4.kind">Bases de datos · App de escritorio</p>
+              <h3 class="card-title">Sistema de Gestión de Proveedores y Productos</h3>
+            </header>
+            <p class="card-desc" data-i18n="p4.desc">Proyecto final de Bases de Datos I en la Universidad del Quindío: aplicación de escritorio que registra qué proveedores pueden suministrar qué productos, hecha sin frameworks (biblioteca estándar de Python y librerías puntuales) sobre una base de datos normalizada en SQL Server. Proyecto en equipo.</p>
+            <ul class="card-bullets">
+              <li data-i18n="p4.b1">Diseño relacional: 9 tablas normalizadas, diagrama entidad-relación, diagrama relacional y diccionario de datos; la relación muchos a muchos proveedor–producto se resuelve con una tabla intermedia.</li>
+              <li data-i18n="p4.b2">SQL avanzado: consultas JOIN de varias tablas y subconsultas, todas parametrizadas para evitar inyección SQL.</li>
+              <li data-i18n="p4.b3">Acceso por roles (administrador, usuarios tradicionales y esporádicos), contraseñas con PBKDF2 y bitácora de entradas y salidas.</li>
+              <li data-i18n="p4.b4">Reportes en PDF con filtros elegidos por el usuario, arquitectura en tres capas y SQL Server desplegado con Docker.</li>
+            </ul>
+            <ul class="tag-list">
+              <li>Python</li><li>Tkinter</li><li>SQL Server</li><li>Docker</li><li>reportlab</li>
+            </ul>
+            <a class="card-link" href="https://github.com/ShanT237/relational-inventory-db" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.view">Ver en GitHub</span> →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <div class="container">
+        <div class="section-head"><span class="section-index">03</span><h2 data-i18n="stack.title">Stack tecnológico</h2></div>
+        <div class="stack-grid">
+          <div class="stack-group">
+            <h3 class="stack-title">Backend</h3>
+            <ul class="chip-list"><li>Java 21</li><li>Spring Boot 3</li><li>Spring Security</li><li>JWT</li><li>REST API</li><li>Swagger</li><li>Maven</li><li>Gradle</li></ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-title" data-i18n="stack.mobile">Móvil</h3>
+            <ul class="chip-list"><li>Flutter</li><li>Dart</li><li>Provider</li><li>Android Studio</li></ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-title">Frontend</h3>
+            <ul class="chip-list"><li>Angular 17</li><li>TypeScript</li><li>React</li></ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-title" data-i18n="stack.databases">Bases de datos</h3>
+            <ul class="chip-list"><li>MariaDB</li><li>MySQL</li><li>PostgreSQL</li><li>SQL Server</li></ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-title" data-i18n="stack.tools">Herramientas</h3>
+            <ul class="chip-list"><li>Docker</li><li>Git</li></ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="stack-title" data-i18n="stack.languages">Otros lenguajes</h3>
+            <ul class="chip-list"><li>Python</li><li>C++</li><li>Elixir</li></ul>
+          </div>
+          <div class="stack-group stack-group-wide">
+            <h3 class="stack-title" data-i18n="stack.concepts">Conceptos</h3>
+            <ul class="chip-list">
+              <li data-i18n="stack.c1">Estructuras de datos y algoritmos</li>
+              <li data-i18n="stack.c2">Diseño de APIs REST</li>
+              <li data-i18n="stack.c3">DDD y Arquitectura Hexagonal</li>
+              <li data-i18n="stack.c4">Seguridad con JWT</li>
+              <li data-i18n="stack.c5">Pruebas unitarias y de integración</li>
+              <li data-i18n="stack.c6">Programación orientada a objetos</li>
+              <li data-i18n="stack.c7">Bases de datos relacionales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-head"><span class="section-index">04</span><h2 data-i18n="certs.title">Certificaciones</h2></div>
+        <div class="certs-grid">
+          <ul class="cert-list">
+            <li class="cert-item"><span class="cert-title">Full Stack Empresarial con Spring Boot y Angular</span><span class="cert-meta">Dev Senior Code · 2025</span></li>
+            <li class="cert-item"><span class="cert-title">SQL: Curso completo de Bases de Datos</span><span class="cert-meta">Udemy · 2025</span></li>
+          </ul>
+          <div class="lang-block">
+            <h3 class="stack-title" data-i18n="langs.title">Idiomas</h3>
+            <ul class="chip-list">
+              <li data-i18n="langs.es">Español · Nativo</li>
+              <li data-i18n="langs.en">Inglés · B2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head"><span class="section-index">05</span><h2 data-i18n="contact.title">Contacto</h2></div>
+        <p class="contact-lead" data-i18n="contact.lead">¿Tienes una oportunidad, una práctica o un proyecto en mente? Escríbeme.</p>
+        <ul class="contact-list">
+          <li><a class="btn btn-primary" href="mailto:juandavidtapiero8@gmail.com">juandavidtapiero8@gmail.com</a></li>
+          <li><a class="btn btn-secondary" href="https://www.linkedin.com/in/juan-david-tapiero-montoya-4834b02b3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a class="btn btn-secondary" href="https://github.com/Juanda2312" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><span data-i18n="footer.built">Hecho con HTML, CSS y JavaScript puro.</span> <span>© <span id="year">2026</span> Juan David Tapiero Montoya</span></p>
+    </div>
+  </footer>
+</body>
+</html>
