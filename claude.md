@@ -135,7 +135,7 @@ Todo el copywriting exacto está dentro de los bloques de código de las seccion
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Juan David Tapiero Montoya | Desarrollador Backend y Móvil</title>
-  <meta name="description" content="Portafolio de Juan David Tapiero Montoya, estudiante de Ciencias de la Computación y desarrollador junior backend con Java y Spring Boot y móvil con Flutter.">
+  <meta name="description" content="Portafolio de Juan David Tapiero Montoya, estudiante de Ingeniería de Sistemas y Computación y desarrollador junior backend con Java y Spring Boot y móvil con Flutter.">
   <meta name="theme-color" content="#0d1117">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/variables.css">
@@ -172,7 +172,7 @@ Todo el copywriting exacto está dentro de los bloques de código de las seccion
         <div class="hero-copy">
           <p class="hero-prompt">$ whoami</p>
           <h1 class="hero-name">Juan David Tapiero Montoya</h1>
-          <p class="hero-role" data-i18n="hero.role">Estudiante de Ciencias de la Computación · Desarrollador junior full stack y móvil</p>
+          <p class="hero-role" data-i18n="hero.role">Estudiante de Ingeniería de Sistemas y Computación · Desarrollador junior full stack y móvil</p>
           <p class="hero-tagline" data-i18n="hero.tagline">Construyo backends seguros con Java y Spring Boot y apps móviles con Flutter. Me gusta convertir la teoría de estructuras de datos en productos reales que funcionan.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects" data-i18n="hero.cta.projects">Ver proyectos</a>
@@ -199,13 +199,13 @@ Todo el copywriting exacto está dentro de los bloques de código de las seccion
         <div class="section-head"><span class="section-index">01</span><h2 data-i18n="about.title">Sobre mí</h2></div>
         <div class="about-grid">
           <div class="about-text">
-            <p data-i18n="about.p1">Soy estudiante de Ciencias de la Computación en la Universidad del Quindío, en Armenia, Colombia. Mi enfoque principal es el backend: APIs REST con Spring Boot, seguridad con JWT y roles, y modelos de dominio con DDD y Arquitectura Hexagonal.</p>
+            <p data-i18n="about.p1">Soy estudiante de Ingeniería de Sistemas y Computación en la Universidad del Quindío, en Armenia, Colombia. Mi enfoque principal es el backend: APIs REST con Spring Boot, seguridad con JWT y roles, y modelos de dominio con DDD y Arquitectura Hexagonal.</p>
             <p data-i18n="about.p2">También desarrollo apps móviles con Flutter y Dart, pensadas para funcionar sin conexión y guardar sus datos de forma local. Disfruto trabajar en equipo, escribir pruebas y documentar mis APIs con Swagger.</p>
           </div>
           <dl class="about-facts">
             <div><dt>location</dt><dd>Armenia, Colombia</dd></div>
             <div><dt>university</dt><dd>Universidad del Quindío</dd></div>
-            <div><dt>degree</dt><dd data-i18n="about.degree">Ciencias de la Computación</dd></div>
+            <div><dt>degree</dt><dd data-i18n="about.degree">Ingeniería de Sistemas y Computación</dd></div>
             <div><dt>focus</dt><dd data-i18n="about.focus">Backend y móvil</dd></div>
           </dl>
         </div>
@@ -393,7 +393,7 @@ Todo el copywriting exacto está dentro de los bloques de código de las seccion
 // ===== BLOCK A: apertura + meta, aria, nav, hero, about =====
 window.TRANSLATIONS_EN = {
   "meta.title": "Juan David Tapiero Montoya | Backend & Mobile Developer",
-  "meta.description": "Portfolio of Juan David Tapiero Montoya, Computer Science student and junior developer: backend with Java and Spring Boot, mobile with Flutter.",
+  "meta.description": "Portfolio of Juan David Tapiero Montoya, Systems and Computer Engineering student and junior developer: backend with Java and Spring Boot, mobile with Flutter.",
 
   "skip": "Skip to content",
   "aria.menu": "Open menu",
@@ -406,15 +406,15 @@ window.TRANSLATIONS_EN = {
   "nav.certs": "Certifications",
   "nav.contact": "Contact",
 
-  "hero.role": "Computer Science student · Junior full stack & mobile developer",
+  "hero.role": "Systems and Computer Engineering student · Junior full stack & mobile developer",
   "hero.tagline": "I build secure backends with Java and Spring Boot and mobile apps with Flutter. I enjoy turning data-structure theory into real, working products.",
   "hero.cta.projects": "View projects",
   "hero.cta.contact": "Get in touch",
 
   "about.title": "About me",
-  "about.p1": "I'm a Computer Science student at Universidad del Quindío in Armenia, Colombia. My main focus is backend development: REST APIs with Spring Boot, JWT and role-based security, and domain models built with DDD and Hexagonal Architecture.",
+  "about.p1": "I'm a Systems and Computer Engineering student at Universidad del Quindío in Armenia, Colombia. My main focus is backend development: REST APIs with Spring Boot, JWT and role-based security, and domain models built with DDD and Hexagonal Architecture.",
   "about.p2": "I also build mobile apps with Flutter and Dart, designed to work offline and store their data locally. I enjoy working in teams, writing tests and documenting my APIs with Swagger.",
-  "about.degree": "Computer Science",
+  "about.degree": "Systems and Computer Engineering",
   "about.focus": "Backend & mobile",
 
 // ===== BLOCK B: projects (cabecera) + p1 + p2 =====

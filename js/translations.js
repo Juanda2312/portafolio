@@ -1,6 +1,6 @@
 window.TRANSLATIONS_EN = {
   "meta.title": "Juan David Tapiero Montoya | Backend & Mobile Developer",
-  "meta.description": "Portfolio of Juan David Tapiero Montoya, Computer Science student and junior developer: backend with Java and Spring Boot, mobile with Flutter.",
+  "meta.description": "Portfolio of Juan David Tapiero Montoya, Systems and Computer Engineering student and junior developer: backend with Java and Spring Boot, mobile with Flutter.",
 
   "skip": "Skip to content",
   "aria.menu": "Open menu",
@@ -13,15 +13,15 @@ window.TRANSLATIONS_EN = {
   "nav.certs": "Certifications",
   "nav.contact": "Contact",
 
-  "hero.role": "Computer Science student · Junior full stack & mobile developer",
+  "hero.role": "Systems and Computer Engineering student · Junior full stack & mobile developer",
   "hero.tagline": "I build secure backends with Java and Spring Boot and mobile apps with Flutter. I enjoy turning data-structure theory into real, working products.",
   "hero.cta.projects": "View projects",
   "hero.cta.contact": "Get in touch",
 
   "about.title": "About me",
-  "about.p1": "I'm a Computer Science student at Universidad del Quindío in Armenia, Colombia. My main focus is backend development: REST APIs with Spring Boot, JWT and role-based security, and domain models built with DDD and Hexagonal Architecture.",
+  "about.p1": "I'm a Systems and Computer Engineering student at Universidad del Quindío in Armenia, Colombia. My main focus is backend development: REST APIs with Spring Boot, JWT and role-based security, and domain models built with DDD and Hexagonal Architecture.",
   "about.p2": "I also build mobile apps with Flutter and Dart, designed to work offline and store their data locally. I enjoy working in teams, writing tests and documenting my APIs with Swagger.",
-  "about.degree": "Computer Science",
+  "about.degree": "Systems and Computer Engineering",
   "about.focus": "Backend & mobile",
 
   "projects.title": "Featured projects",
