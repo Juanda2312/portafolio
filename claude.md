@@ -73,7 +73,7 @@ No crees ningún otro archivo ni carpeta.
 - Una sola columna en pantallas de 760 px o menos (mobile first en la práctica: verifica ambas).
 - Contraste: texto siempre `--text` o `--text-muted` sobre `--bg`, `--bg-elevated` o `--bg-card`. El botón primario usa fondo `--accent` con texto `#0d1117`.
 - Animación permitida: solo el parpadeo del cursor `_` y transiciones de 150 ms en hover. Respetar `prefers-reduced-motion`.
-- Accesibilidad: un solo `<h1>`, `lang` correcto, `:focus-visible` visible, enlace "saltar al contenido", `aria-label` en botones sin texto, `rel="noopener noreferrer"` en enlaces con `target="_blank"`.
+- Accesibilidad: un solo `<h1>`, `lang` correcto, `:focus-visible` visible, `aria-label` en botones sin texto, `rel="noopener noreferrer"` en enlaces con `target="_blank"`.
 
 ## 5. Contenido: dónde está
 
@@ -145,8 +145,6 @@ Todo el copywriting exacto está dentro de los bloques de código de las seccion
   <script src="js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
-
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home">~/juan-david</a>
@@ -368,7 +366,7 @@ Todo el copywriting exacto está dentro de los bloques de código de las seccion
         <div class="section-head"><span class="section-index">05</span><h2 data-i18n="contact.title">Contacto</h2></div>
         <p class="contact-lead" data-i18n="contact.lead">¿Tienes una oportunidad, una práctica o un proyecto en mente? Escríbeme.</p>
         <ul class="contact-list">
-          <li><a class="btn btn-primary" href="mailto:juandavidtapiero8@gmail.com">juandavidtapiero8@gmail.com</a></li>
+          <li><a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;to=juandavidtapiero8@gmail.com" target="_blank" rel="noopener noreferrer">juandavidtapiero8@gmail.com</a></li>
           <li><a class="btn btn-secondary" href="https://www.linkedin.com/in/juan-david-tapiero-montoya-4834b02b3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           <li><a class="btn btn-secondary" href="https://github.com/Juanda2312" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
@@ -395,7 +393,6 @@ window.TRANSLATIONS_EN = {
   "meta.title": "Juan David Tapiero Montoya | Backend & Mobile Developer",
   "meta.description": "Portfolio of Juan David Tapiero Montoya, Systems and Computer Engineering student and junior developer: backend with Java and Spring Boot, mobile with Flutter.",
 
-  "skip": "Skip to content",
   "aria.menu": "Open menu",
   "aria.nav": "Main navigation",
   "aria.lang": "Change language",
@@ -652,8 +649,6 @@ Escribe los valores tal como están. Todos los colores con `var(--...)`.
 | `a:hover` | `text-decoration: underline` |
 | `:focus-visible` | `outline: 2px solid var(--accent); outline-offset: 3px` |
 | `.container` | `width: min(100% - 2rem, var(--max-width)); margin-inline: auto` |
-| `.skip-link` | `position: absolute; left: 1rem; top: -100px; z-index: 200; background: var(--accent); color: #0d1117; padding: 0.5rem 1rem; border-radius: var(--radius-sm); font-weight: 600` |
-| `.skip-link:focus` | `top: 1rem; text-decoration: none` |
 | `.section` | `padding-block: 5rem` |
 | `.section-head` | `display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem` |
 | `.section-head::after` | `content: ""; flex: 1; height: 1px; background: var(--border)` |
@@ -805,7 +800,7 @@ Escribe los valores tal como están. Todos los colores con `var(--...)`.
 28. **QA manual.** Revisa y corrige solo lo que falle:
     - [ ] Al abrir `index.html` se ve todo en español sin errores en la consola.
     - [ ] El botón `EN` cambia todo el texto a inglés (incluida la pestaña del navegador) y el botón pasa a `ES`; al recargar se recuerda el idioma.
-    - [ ] Los 4 enlaces de GitHub, LinkedIn y el `mailto:` apuntan a las URLs de la sección 6.3.
+    - [ ] Los 4 enlaces de GitHub, LinkedIn y el enlace de Gmail apuntan a las URLs de la sección 6.3.
     - [ ] El menú ☰ abre, cierra y se cierra al tocar un enlace.
     - [ ] Se puede navegar con teclado (Tab) y el foco se ve.
     - [ ] No hay scroll horizontal en 360 px de ancho.
