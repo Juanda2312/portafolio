@@ -26,6 +26,7 @@ Este archivo es tu única fuente de verdad. Léelo completo una vez y luego trab
 | Contacto | Correo, LinkedIn y GitHub. Nada más (sin formulario, sin WhatsApp, sin CV) |
 | Extras | Incluir certificaciones e idiomas. **Sin foto** |
 | Despliegue | GitHub Pages, sin dominio propio |
+| Vista previa al compartir | Etiquetas Open Graph y canonical en index.html, solo en español y sin imagen (regla de cero imágenes) |
 
 ## 3. Estructura exacta de archivos
 
@@ -137,6 +138,14 @@ Todo el copywriting exacto está dentro de los bloques de código de las seccion
   <title>Juan David Tapiero Montoya | Desarrollador Backend y Móvil</title>
   <meta name="description" content="Portafolio de Juan David Tapiero Montoya, estudiante de Ingeniería de Sistemas y Computación y desarrollador junior backend con Java y Spring Boot y móvil con Flutter.">
   <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://juanda2312.github.io/portafolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Juan David Tapiero Montoya">
+  <meta property="og:title" content="Juan David Tapiero Montoya | Desarrollador Backend y Móvil">
+  <meta property="og:description" content="Portafolio de Juan David Tapiero Montoya, estudiante de Ingeniería de Sistemas y Computación y desarrollador junior backend con Java y Spring Boot y móvil con Flutter.">
+  <meta property="og:url" content="https://juanda2312.github.io/portafolio/">
+  <meta property="og:locale" content="es_CO">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
