@@ -26,6 +26,7 @@ window.TRANSLATIONS_EN = {
   "projects.title": "Featured projects",
   "projects.lead": "A selection of projects that show my focus on backend, security and mobile apps.",
   "projects.view": "View on GitHub",
+  "projects.demo": "Download demo (.exe)",
 
   "p1.kind": "Full stack · Multi-vendor marketplace",
   "p1.desc": "A multi-vendor marketplace for gaming products (peripherals, setup furniture, physical games, digital licenses and combos), built as a team project for Advanced Programming / Software Engineering at Universidad del Quindío. Full stack with Angular, Spring Boot and MariaDB, following Hexagonal Architecture and Domain-Driven Design.",
@@ -50,11 +51,11 @@ window.TRANSLATIONS_EN = {
   "p3.b4": "Signed release APK, no internet permission and all data stored locally.",
 
   "p4.kind": "Databases · Desktop app",
-  "p4.desc": "Final project for Databases I at Universidad del Quindío: a desktop application that tracks which suppliers can provide which products, built without frameworks (Python standard library plus targeted libraries) on top of a normalized SQL Server database. Team project.",
+  "p4.desc": "Final project for Databases I at Universidad del Quindío: a desktop application that tracks which suppliers can provide which products, built without frameworks (Python standard library plus targeted libraries) on top of a normalized relational database (SQL Server in the original project, SQLite in the downloadable demo). Team project.",
   "p4.b1": "Relational design: 9 normalized tables, ER diagram, relational diagram and data dictionary; the many-to-many supplier–product relation is resolved with a junction table.",
   "p4.b2": "Advanced SQL: multi-table JOIN queries and subqueries, all parameterized to prevent SQL injection.",
   "p4.b3": "Role-based access (administrator, traditional and occasional users), PBKDF2-hashed passwords and a login/logout audit log.",
-  "p4.b4": "PDF reports with user-selected filters, three-layer architecture and SQL Server set up with Docker.",
+  "p4.b4": "PDF reports with user-selected filters, three-layer architecture and a Windows demo (.exe) that runs with no installation.",
 
   "stack.title": "Tech stack",
   "stack.mobile": "Mobile",
