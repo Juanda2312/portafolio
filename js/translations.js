@@ -27,6 +27,7 @@ window.TRANSLATIONS_EN = {
   "projects.lead": "A selection of projects that show my focus on backend, security and mobile apps.",
   "projects.view": "View on GitHub",
   "projects.demo": "Download demo (.exe)",
+  "projects.apk": "Download APK",
 
   "p1.kind": "Full stack · Multi-vendor marketplace",
   "p1.desc": "A multi-vendor marketplace for gaming products (peripherals, setup furniture, physical games, digital licenses and combos), built as a team project for Advanced Programming / Software Engineering at Universidad del Quindío. Full stack with Angular, Spring Boot and MariaDB, following Hexagonal Architecture and Domain-Driven Design.",
