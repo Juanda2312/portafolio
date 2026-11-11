@@ -526,3 +526,26 @@
 .chip-list li:hover i {
   color: initial;
 }
+
+/* Tarjetas semitransparentes para que se vea el fondo animado */
+.card,
+.stack-group,
+.lang-block,
+.about-facts,
+.cert-item {
+  background: rgba(22, 27, 34, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+/* Los chips de adentro también, un poco más tenues */
+.chip-list li {
+  background: rgba(13, 17, 23, 0.45);
+}
+
+/* Terminal del hero: un poco de transparencia, pero conserva su barra */
+.terminal {
+  background: rgba(22, 27, 34, 0.6);
+}
+.terminal-bar {
+  background: rgba(33, 38, 45, 0.7);
+}
