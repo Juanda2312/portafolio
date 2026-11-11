@@ -508,4 +508,22 @@
   color: inherit;
   text-decoration: underline;
 }
+
+.chip-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.chip-list li i {
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--muted, #8b949e);      /* monocromático: encaja con tu estética de terminal */
+  transition: color 0.2s ease;
+}
+
+/* Al pasar el mouse se muestra el color oficial de la marca */
+.chip-list li:hover i {
+  color: initial;
+}
 }
