@@ -497,4 +497,15 @@
     flex-direction: column;
     gap: 0.75rem;
   }
+
+  .card-note {
+  font-size: 0.85rem;
+  color: var(--text-muted, #8b949e);
+  margin: 0.75rem 0 0;
+}
+
+.card-note a {
+  color: inherit;
+  text-decoration: underline;
+}
 }

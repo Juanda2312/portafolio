@@ -28,6 +28,8 @@ window.TRANSLATIONS_EN = {
   "projects.view": "View on GitHub",
   "projects.demo": "Download demo",
   "projects.apk": "Download APK",
+  "projects.live": "View live demo",
+  "projects.api": "API (Swagger)",
 
   "p1.kind": "Full stack · Multi-vendor marketplace",
   "p1.desc": "A multi-vendor marketplace for gaming products (peripherals, setup furniture, physical games, digital licenses and combos), built as a team project for Advanced Programming / Software Engineering at Universidad del Quindío. Full stack with Angular, Spring Boot and MariaDB, following Hexagonal Architecture and Domain-Driven Design.",
@@ -42,7 +44,11 @@ window.TRANSLATIONS_EN = {
   "p2.b1": "Layered architecture: Angular 17 frontend and Spring Boot 3 REST API (Java 21), documented with Swagger UI.",
   "p2.b2": "Data structures with a purpose: AVL tree for prices and rankings, graph with BFS for client–property relations, stack for undo, and FIFO and priority queues for visits and alerts.",
   "p2.b3": "Recommendation engine that scores properties from 0 to 100, plus automatic alerts and unusual-behavior detection.",
-  "p2.b4": "PropBot: an AI assistant (LLM via OpenRouter) that answers with live platform data, plus an admin dashboard and a client portal.",
+  "p2.b4": "PropBot: an AI assistant (LLM via OpenRouter) that answers with live platform data; requests go through a backend proxy, so the API key never reaches the browser.",
+  "p2.b5": "Deployed to production: frontend on Vercel and Dockerized API on Render, with restricted CORS and environment-variable configuration.",
+  "p2.note": "Demo account (client): juan@gmail.com / 1094567890. The other accounts, including the admin one, are in the",
+  "p2.note.link": "repository README",
+  "p2.note.cold": "The API runs on Render's free tier: if it was asleep, the first load can take about a minute; just retry.",
 
   "p3.kind": "Mobile · Offline Android app",
   "p3.desc": "A 100% offline Android app to organize grocery shopping: manage products and supermarkets, build a shopping list with totals per supermarket and track a budget with the remaining balance. Built with Flutter, no internet needed.",

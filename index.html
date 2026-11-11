@@ -124,12 +124,18 @@
               <li data-i18n="p2.b1">Arquitectura en capas: frontend en Angular 17 y API REST con Spring Boot 3 (Java 21), documentada con Swagger UI.</li>
               <li data-i18n="p2.b2">Estructuras de datos con propósito: árbol AVL para precios y rankings, grafo con BFS para relaciones cliente–inmueble, pila para deshacer y colas FIFO y de prioridad para visitas y alertas.</li>
               <li data-i18n="p2.b3">Motor de recomendaciones con puntaje de 0 a 100, alertas automáticas y detección de comportamientos inusuales.</li>
-              <li data-i18n="p2.b4">PropBot: asistente con IA (LLM vía OpenRouter) que responde con datos en vivo de la plataforma, con panel de administración y portal del cliente.</li>
+              <li data-i18n="p2.b4">PropBot: asistente con IA (LLM vía OpenRouter) que responde con datos en vivo de la plataforma; las consultas pasan por un proxy del backend, así la clave nunca llega al navegador.</li>
+              <li data-i18n="p2.b5">Desplegado en producción: frontend en Vercel y API en Docker sobre Render, con CORS restringido y configuración por variables de entorno.</li>
             </ul>
             <ul class="tag-list">
-              <li>Java 21</li><li>Spring Boot 3</li><li>Angular 17</li><li>TypeScript</li><li>Maven</li><li>Swagger</li>
+              <li>Java 21</li><li>Spring Boot 3</li><li>Angular 17</li><li>TypeScript</li><li>Maven</li><li>Swagger</li><li>Docker</li><li>Vercel</li><li>Render</li>
             </ul>
-            <a class="card-link" href="https://github.com/Juanda2312/PropTech" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.view">Ver en GitHub</span> →</a>
+              <p class="card-note"><span data-i18n="p2.note">Cuenta de prueba (cliente): juan@gmail.com / 1094567890. Las demás cuentas, incluida la de administrador, están en el</span> <a href="https://github.com/Juanda2312/PropTech#demo-en-vivo" target="_blank" rel="noopener noreferrer"><span data-i18n="p2.note.link">README del repositorio</span></a>. <span data-i18n="p2.note.cold">La API corre en el plan gratuito de Render: si estaba dormida, la primera carga puede tardar cerca de 1 minuto; basta con reintentar.</span></p>
+            <div class="card-links">
+              <a class="card-link" href="https://github.com/Juanda2312/PropTech" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.view">Ver en GitHub</span> →</a>
+              <a class="card-link" href="https://prop-tech-lake.vercel.app" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.live">Ver demo en vivo</span> ↗</a>
+              <a class="card-link" href="https://proptech-api-3ebi.onrender.com/swagger-ui/index.html" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.api">API (Swagger)</span> ↗</a>
+            </div>
           </article>
 
           <article class="card">
