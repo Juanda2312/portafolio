@@ -26,7 +26,7 @@ window.TRANSLATIONS_EN = {
   "projects.title": "Featured projects",
   "projects.lead": "A selection of projects that show my focus on backend, security and mobile apps.",
   "projects.view": "View on GitHub",
-  "projects.demo": "Download demo (.exe)",
+  "projects.demo": "Download demo",
   "projects.apk": "Download APK",
 
   "p1.kind": "Full stack · Multi-vendor marketplace",
@@ -56,7 +56,7 @@ window.TRANSLATIONS_EN = {
   "p4.b1": "Relational design: 9 normalized tables, ER diagram, relational diagram and data dictionary; the many-to-many supplier–product relation is resolved with a junction table.",
   "p4.b2": "Advanced SQL: multi-table JOIN queries and subqueries, all parameterized to prevent SQL injection.",
   "p4.b3": "Role-based access (administrator, traditional and occasional users), PBKDF2-hashed passwords and a login/logout audit log.",
-  "p4.b4": "PDF reports with user-selected filters, three-layer architecture and a Windows demo (.exe) that runs with no installation.",
+  "p4.b4": "PDF reports with user-selected filters, three-layer architecture and an executable demo for Windows, Linux and macOS that runs with no installation.",
 
   "stack.title": "Tech stack",
   "stack.mobile": "Mobile",
@@ -71,6 +71,7 @@ window.TRANSLATIONS_EN = {
   "stack.c5": "Unit & integration testing",
   "stack.c6": "Object-oriented programming",
   "stack.c7": "Relational databases",
+  "stack.c8": "GitHub Actions",
 
   "certs.title": "Certifications",
   "langs.title": "Languages",
