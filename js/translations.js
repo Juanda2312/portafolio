@@ -68,6 +68,7 @@ window.TRANSLATIONS_EN = {
   "stack.mobile": "Mobile",
   "stack.databases": "Databases",
   "stack.tools": "Tools",
+  "stack.deploy": "Deployment",
   "stack.languages": "Other languages",
   "stack.concepts": "Concepts",
   "stack.c1": "Data structures & algorithms",
@@ -78,7 +79,6 @@ window.TRANSLATIONS_EN = {
   "stack.c6": "Object-oriented programming",
   "stack.c7": "Relational databases",
   "stack.c8": "GitHub Actions",
-  "stack.deploy": "Deployment",
 
   "certs.title": "Certifications",
   "langs.title": "Languages",
