@@ -115,3 +115,15 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 })();
+
+// ===== PARTE 3: color de marca en los íconos al pasar el mouse =====
+(function () {
+  "use strict";
+
+  document.querySelectorAll(".chip-list li, .tag-list li").forEach(function (li) {
+    var icon = li.querySelector("i");
+    if (!icon) return;
+    li.addEventListener("mouseenter", function () { icon.classList.add("colored"); });
+    li.addEventListener("mouseleave", function () { icon.classList.remove("colored"); });
+  });
+})();

@@ -523,8 +523,9 @@
   transition: color 0.2s ease;
 }
 
-.chip-list li:hover i {
-  color: initial;
+.chip-list li i.devicon-vercel-original.colored,
+.tag-list li i.devicon-vercel-original.colored {
+  color: #fff;
 }
 
 /* Tarjetas semitransparentes para que se vea el fondo animado */
@@ -548,4 +549,20 @@
 }
 .terminal-bar {
   background: rgba(33, 38, 45, 0.7);
+}
+
+.tag-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tag-list li i {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.type-caret {
+  color: var(--accent);
+  animation: blink 1s steps(1) infinite;
 }
