@@ -78,6 +78,7 @@ window.TRANSLATIONS_EN = {
   "stack.c6": "Object-oriented programming",
   "stack.c7": "Relational databases",
   "stack.c8": "GitHub Actions",
+  "stack.deploy": "Deployment",
 
   "certs.title": "Certifications",
   "langs.title": "Languages",
