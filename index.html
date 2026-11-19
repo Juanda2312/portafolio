@@ -80,7 +80,7 @@
         <div class="section-head"><span class="section-index">01</span><h2 data-i18n="about.title">Sobre mí</h2></div>
         <div class="about-grid">
           <div class="about-text">
-            <p data-i18n="about.p1">Soy estudiante de Ingeniería de Sistemas y Computación en la Universidad del Quindío, en Armenia, Colombia. Mi enfoque principal es el backend: APIs REST con Spring Boot, seguridad con JWT y roles, y modelos de dominio con DDD y Arquitectura Hexagonal.</p>
+            <p data-i18n="about.p1">Soy estudiante de Ingeniería de Sistemas y Computación en la Universidad del Quindío, en Armenia, Colombia. Mi enfoque principal es el backend: APIs REST con Spring Boot, seguridad con JWT y roles, y modelos de dominio con DDD y Clean Architecture.</p>
             <p data-i18n="about.p2">También desarrollo apps móviles con Flutter y Dart, pensadas para funcionar sin conexión y guardar sus datos de forma local. Disfruto trabajar en equipo, escribir pruebas y documentar mis APIs con Swagger.</p>
           </div>
           <dl class="about-facts">
@@ -104,25 +104,35 @@
               <p class="card-kind" data-i18n="p1.kind">Full stack · Marketplace multi-vendedor</p>
               <h3 class="card-title">E-Commerce Marketplace Gamer</h3>
             </header>
-            <p class="card-desc" data-i18n="p1.desc">Marketplace multi-vendedor de productos gaming (periféricos, mobiliario de setup, juegos físicos, licencias digitales y combos), construido en equipo para Programación Avanzada / Ingeniería de Software en la Universidad del Quindío. Full stack con Angular, Spring Boot y MariaDB, bajo Arquitectura Hexagonal y Domain-Driven Design.</p>
+            <p class="card-desc" data-i18n="p1.desc">Marketplace multi-vendedor de productos gaming (periféricos, mobiliario de setup, juegos físicos, licencias digitales y combos), construido en equipo para Programación Avanzada / Ingeniería de Software en la Universidad del Quindío. Full stack con Angular, Spring Boot y MariaDB, bajo Clean Architecture y Domain-Driven Design, y desplegado en producción.</p>
             <ul class="card-bullets">
-              <li data-i18n="p1.b1">Modelo de dominio rico: raíces de agregado, objetos de valor como records de Java y reglas de negocio protegidas (stock nunca negativo, reembolso dentro de 48 h, una reseña por compra).</li>
-              <li data-i18n="p1.b2">37 casos de uso: compras, catálogo, combos, reseñas y puntos, wishlist, notificaciones, cuentas y reportes.</li>
-              <li data-i18n="p1.b3">Seguridad con Spring Security y JWT, roles COMPRADOR y VENDEDOR, contraseñas con BCrypt y la identidad del usuario siempre tomada del token.</li>
-              <li data-i18n="p1.b4">API REST documentada con Swagger, con búsqueda paginada de catálogo y reportes de ventas resueltos en la base de datos.</li>
-              <li data-i18n="p1.b5">Pruebas con @DataJpaTest, endpoints protegidos (401 / 403 / 201) y una prueba de integración de punta a punta con MockMvc.</li>
+              <li data-i18n="p1.b1">Modelo de dominio rico: raíces de agregado, objetos de valor como records de Java y reglas de negocio protegidas (stock nunca negativo, reembolso dentro de 48 h, una reseña por compra, cupón de un solo uso por comprador).</li>
+              <li data-i18n="p1.b2">72 casos de uso: carrito con pedidos atómicos (todo o nada), cupones, combos, preventas, regalos por metas, reseñas y puntos, wishlist, notificaciones en la app y por correo, cuentas y reportes.</li>
+              <li data-i18n="p1.b3">Seguridad con Spring Security y JWT, roles COMPRADOR y VENDEDOR, contraseñas con BCrypt, identidad siempre tomada del token y recuperación de contraseña con enlaces de un solo uso (solo se guarda el hash del token).</li>
+              <li data-i18n="p1.b4">Chat en vivo comprador–vendedor con Server-Sent Events (mensajes idempotentes, confirmación de lectura y reconexión) y asistente de IA con OpenRouter para compradores y vendedores, sin enviar datos personales al modelo.</li>
+              <li data-i18n="p1.b5">API REST de 88 endpoints documentada con Swagger, con búsqueda paginada de catálogo, reportes resueltos en la base de datos y subida de imágenes a Cloudinary.</li>
+              <li data-i18n="p1.b6">Frontend en Angular 21 (componentes standalone, signals y formularios reactivos) con pantallas por rol protegidas con guards, desplegado en Vercel, con el backend en Render y la base de datos en Aiven.</li>
+              <li data-i18n="p1.b7">Pruebas con @DataJpaTest, endpoints protegidos (401 / 403 / 201), pruebas de integración de punta a punta con MockMvc y pruebas del frontend con Vitest.</li>
             </ul>
               <ul class="tag-list">
                 <li><i class="devicon-java-plain" aria-hidden="true"></i>Java 21</li>
-                <li><i class="devicon-spring-plain" aria-hidden="true"></i>Spring Boot</li>
+                <li><i class="devicon-spring-plain" aria-hidden="true"></i>Spring Boot 4</li>
                 <li><i class="devicon-spring-plain" aria-hidden="true"></i>Spring Security</li>
                 <li>JWT</li>
-                <li><i class="devicon-angular-plain" aria-hidden="true"></i>Angular</li>
+                <li><i class="devicon-angular-plain" aria-hidden="true"></i>Angular 21</li>
                 <li><i class="devicon-mariadb-original" aria-hidden="true"></i>MariaDB</li>
-                <li>DDD</li>
+                <li>DDD + Clean Architecture</li>
                 <li><i class="devicon-swagger-plain" aria-hidden="true"></i>Swagger</li>
+                <li><i class="devicon-vercel-original" aria-hidden="true"></i>Vercel</li>
+                <li>Render</li>
+                <li>Aiven</li>
               </ul>
-            <a class="card-link" href="https://github.com/ShanT237/EcommerceProductosGamer" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.view">Ver en GitHub</span> →</a>
+              <p class="card-note"><span data-i18n="p1.note.cold">El backend corre en el plan gratuito de Render: si estaba dormido, la primera carga puede tardar cerca de 1 minuto; basta con reintentar.</span></p>
+            <div class="card-links">
+              <a class="card-link" href="https://github.com/ShanT237/EcommerceProductosGamer" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.view">Ver en GitHub</span> →</a>
+              <a class="card-link" href="https://ecommerce-productos-gamer.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.live">Ver demo en vivo</span> ↗</a>
+              <a class="card-link" href="https://gamerzone-backend-2tlc.onrender.com/swagger-ui.html" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.api">API (Swagger)</span> ↗</a>
+            </div>
           </article>
 
           <article class="card">
@@ -220,7 +230,7 @@
             <h3 class="stack-title">Backend</h3>
             <ul class="chip-list">
               <li><i class="devicon-java-plain" aria-hidden="true"></i>Java 21</li>
-              <li><i class="devicon-spring-plain" aria-hidden="true"></i>Spring Boot 3</li>
+              <li><i class="devicon-spring-plain" aria-hidden="true"></i>Spring Boot</li>
               <li><i class="devicon-spring-plain" aria-hidden="true"></i>Spring Security</li>
               <li>JWT</li>
               <li>REST API</li>
@@ -243,7 +253,7 @@
           <div class="stack-group">
             <h3 class="stack-title">Frontend</h3>
             <ul class="chip-list">
-              <li><i class="devicon-angular-plain" aria-hidden="true"></i>Angular 17</li>
+              <li><i class="devicon-angular-plain" aria-hidden="true"></i>Angular</li>
               <li><i class="devicon-typescript-plain" aria-hidden="true"></i>TypeScript</li>
               <li><i class="devicon-react-original" aria-hidden="true"></i>React</li>
             </ul>
@@ -272,6 +282,7 @@
             <ul class="chip-list">
               <li><i class="devicon-vercel-original" aria-hidden="true"></i>Vercel</li>
               <li>Render</li>
+              <li>Aiven</li>
             </ul>
           </div>
 
@@ -288,7 +299,7 @@
             <ul class="chip-list">
               <li data-i18n="stack.c1">Estructuras de datos y algoritmos</li>
               <li data-i18n="stack.c2">Diseño de APIs REST</li>
-              <li data-i18n="stack.c3">DDD y Arquitectura Hexagonal</li>
+              <li data-i18n="stack.c3">DDD y Clean Architecture</li>
               <li data-i18n="stack.c4">Seguridad con JWT</li>
               <li data-i18n="stack.c5">Pruebas unitarias y de integración</li>
               <li data-i18n="stack.c6">Programación orientada a objetos</li>
